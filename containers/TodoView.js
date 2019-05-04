@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { View, StyleSheet } from 'react-native'
+import { Button } from 'react-native-elements'
 import { connect } from 'react-redux'
 
 import { actionCreators } from '../redux/todoRedux'
@@ -53,6 +54,9 @@ class TodoView extends Component {
           onToggleItemCompleted={this.toggleItemCompleted}
         />
         <View style={styles.divider} />
+        <Button
+          title="Solid Button"
+        />
         <Footer onRemoveCompleted={this.removeCompleted} />
       </View>
     )
