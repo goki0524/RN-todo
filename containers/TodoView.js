@@ -9,20 +9,6 @@ import Input from '../components/Input'
 import List from '../components/List'
 import Footer from '../components/Footer'
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  divider: {
-    height: 1,
-    backgroundColor: 'whitesmoke',
-  },
-})
-
-const mapStateToProps = (state) => ({
-  items: state.items,
-})
-
 class TodoView extends Component {
 
   static propTypes = {
@@ -72,5 +58,19 @@ class TodoView extends Component {
     )
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  divider: {
+    height: 1,
+    backgroundColor: 'whitesmoke',
+  },
+})
+
+const mapStateToProps = (state) => ({
+  items: state.items,
+})
 
 export default connect(mapStateToProps)(TodoView)
