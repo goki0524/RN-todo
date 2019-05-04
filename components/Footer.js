@@ -2,16 +2,6 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { TouchableOpacity, Text, StyleSheet } from 'react-native'
 
-const styles = StyleSheet.create({
-  footer: {
-    paddingVertical: 15,
-    alignItems: 'center',
-  },
-  remove: {
-    color: '#CD5C5C',
-  },
-})
-
 export default class Footer extends Component {
 
   static propTypes = {
@@ -28,3 +18,13 @@ export default class Footer extends Component {
     )
   }
 }
+
+const styles = StyleSheet.create({
+  footer: {
+    paddingVertical: 15,
+    alignItems: 'center',
+  },
+  remove: {
+    color: '#CD5C5C',
+  },
+})

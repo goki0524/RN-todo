@@ -2,12 +2,6 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { TextInput, StyleSheet } from 'react-native'
 
-const styles = StyleSheet.create({
-  input: {
-    height: 50,
-    padding: 15,
-  },
-})
 
 export default class Input extends Component {
 
@@ -50,3 +44,10 @@ export default class Input extends Component {
     )
   }
 }
+
+const styles = StyleSheet.create({
+  input: {
+    height: 50,
+    padding: 15,
+  },
+})

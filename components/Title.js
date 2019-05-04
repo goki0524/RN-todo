@@ -1,17 +1,6 @@
 import React, { Component } from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 
-const styles = StyleSheet.create({
-  header: {
-    backgroundColor: 'skyblue',
-    padding: 15,
-  },
-  title: {
-    textAlign: 'center',
-    color: 'white',
-  },
-})
-
 export default class Title extends Component {
 
   render() {
@@ -24,3 +13,14 @@ export default class Title extends Component {
     )
   }
 }
+
+const styles = StyleSheet.create({
+  header: {
+    backgroundColor: 'skyblue',
+    padding: 15,
+  },
+  title: {
+    textAlign: 'center',
+    color: 'white',
+  },
+})
