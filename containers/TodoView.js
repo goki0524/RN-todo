@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
 })
 
 const mapStateToProps = (state) => ({
-  items: state.items,
+  items: state.todoReducer.items,
 })
 
 export default connect(mapStateToProps)(TodoView)

@@ -24,7 +24,7 @@ const initialState = {
   items: [],
 }
 
-export const reducer = (state = initialState, action) => {
+export const todoReducer = (state = initialState, action) => {
   const {type, payload} = action
   const {items} = state
 
